@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/modal.css">
+</head>
+
+<body>
+    <button id="btnAdd" type="submit"><img src="./images/Path 18189.svg" id="demo" alt=""> Add</button>
+
+    <div id="addModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="closeBtn">&times;</span>
+                <h2>Add Invoice</h2>
+                <hr size="1" width="100%" color="#1A262F">
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <label for="">Customer Name <span class="required">*</span></label>
+                    <input type="text" placeholder="">
+                    <br>
+                    <label for="">Customer No. <span class="required">*</span></label>
+                    <input type="text" placeholder="">
+                    <br>
+                    <label for="">Invoice No. <span class="required">*</span></label>
+                    <input type="text" placeholder="">
+                    <br>
+                    <label for="">Invoice Amount <span class="required">*</span></label>
+                    <input type="text" placeholder="">
+                    <label for="">Due Date <span class="required">*</span></label>
+                    <input type="date" placeholder="">
+                    <label for="">Notes <span class="required">*</span></label>
+                    <input type="text" name="" id="">
+                </form>
+
+                <hr size="1" width="100%" color="#1A262F">
+                <div class="modal-footer">
+                    <p id="cancel">Cancel</p>
+                    <div class="modal-footer-btn">
+                        <button class="clear-btn" type="reset">Clear</button>
+                        <button class="add-btn" type="submit">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

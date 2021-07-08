@@ -1,0 +1,230 @@
+body {
+	background-color: #58687E;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding-left: 10px;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+.second-div {
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+	padding-left: 10px;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+.content {
+	float: right;
+	height: 600px;
+	width: 1480px;
+	margin: 10px;
+	padding: 10px;
+	background-color: #273D49CC;
+	border-radius: 0.5rem;
+}
+
+.inner {
+	float: right;
+	width: 1480px;
+}
+
+.inner div {
+	float: right;
+}
+
+.btn-add {
+	background-color: #273D49CC;
+	color: #fff;
+	padding: 10px;
+	padding-top: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: 10px;
+	border-radius: 8px;
+	font-family: 'Ubuntu', sans-serif;
+	border: 1px solid #d2dae2;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	transition: 0.6s all;
+}
+
+.btn-edit {
+	background-color: #273D49CC;
+	color: #fff;
+	padding: 10px 15px;
+	margin-right: 10px;
+	border-radius: 8px;
+	font-family: 'Ubuntu', sans-serif;
+	border: 1px solid #d2dae2;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	transition: 0.6s all;
+}
+
+.btn-delete {
+	background-color: #273D49CC;
+	color: #fff;
+	padding: 10px;
+	padding-top: 13px;
+	margin-right: 10px;
+	border-radius: 8px;
+	font-family: 'Ubuntu', sans-serif;
+	border: 1px solid #d2dae2;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	transition: 0.6s all;
+	font-size: 13px;
+}
+
+.btn-add:hover {
+	background-color: #2d98da;
+	transition-delay: 1ms;
+}
+
+.btn-edit:hover {
+	background-color: #2d98da;
+	transition-delay: 1ms;
+}
+
+.btn-delete:hover {
+	background-color: #2d98da;
+	transition-delay: 1ms;
+}
+
+.inner .search {
+	width: 250px;
+	float: right;
+	border: 2px solid #d2dae2;
+	border-radius: 8px;
+}
+
+.inner input[type=text] {
+	background-color: #273D49CC;
+	padding-left: 10px;
+	padding-right: 40px;
+	padding-top: 11px;
+	padding-bottom: 10px;
+	border: none;
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.inner .search button {
+	float: right;
+	background-color: #273D49CC;
+	border: none;
+	margin-top: 1px;
+	align-items: center;
+	justify-content: center;
+	transition-delay: 1ms;
+	padding: 5px;
+	padding-left: 12px;
+	height: 100%;
+}
+
+.inner .search button:hover {
+	background-color: #2d98da;
+	border-radius: 8px;
+}
+
+.table-wrapper{
+	overflow-y: scroll;
+	height: 528px;
+	margin-top: 60px;
+}
+
+.table-wrapper::-webkit-scrollbar {
+	width: 12px;               /* width of the entire scrollbar */
+  }
+  
+.table-wrapper::-webkit-scrollbar-track {
+	background: #273D49CC;        /* color of the tracking area */
+}
+  
+.table-wrapper::-webkit-scrollbar-thumb {
+	background-color: #1d282ecc;    /* color of the scroll thumb */
+	border-radius: 20px;       /* roundness of the scroll thumb */
+	border: 3px solid #273D49CC;  /* creates padding around scroll thumb */
+}
+
+.table-wrapper th{
+    position: sticky;
+    top: 0;
+	background-color: #273D49CC;
+	color: #97A1A9;
+}
+
+table { 
+	width: 100%; 
+	border-collapse: collapse; 
+	background: #273D49CC; 
+	color: #f3f3f3;
+	font-family: 'Ubuntu', sans-serif;
+}
+  
+td, th { 
+	padding: 8px; 
+	text-align: left; 
+}
+
+th:nth-last-child(8), td:nth-last-child(8) { 
+	text-align: center; 
+}
+
+th:nth-last-child(2), td:nth-last-child(2) { 
+	text-align: center; 
+}
+
+/* Zebra striping */
+tr:nth-of-type(even) { 
+	background: #283A46; 
+}
+
+h1 a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.content .left-slide, .content .right-slide{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	background-color: #444444;
+	border-radius: 50%;
+	color:#ffffff;
+	font-size: 20px;
+	top:50%;
+	cursor: pointer;
+	margin-top: -20px;
+	text-align: center;
+	line-height: 40px;	
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+.content .left-slide:hover,.content .right-slide:hover{
+	box-shadow: 0px 0px 10px black;
+	background-color: #29a8e2;
+	transition: 0.6s all;
+}
+   
+.content .left-slide{
+	left: 10px;
+}
+.content .right-slide{
+	right: 10px;
+}
